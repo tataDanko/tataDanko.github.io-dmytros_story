@@ -2,37 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>story</title>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<section class="owl-carousel owl-theme" id="slider">
-		<div><img src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
-		<div><img src="image/um1bnbaw7qzb7bdaf5on.jpg" width="720" height="1280" alt=""></div>
-		<div><img src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
-		<div><img src="image/um1bnbaw7qzb7bdaf5on.jpg" width="720" height="1280" alt=""></div>
-		<div><img src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
-		<div><img src="image/um1bnbaw7qzb7bdaf5on.jpg" width="720" height="1280" alt=""></div>
-		<div><img src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
+		<div class="foto"><img  src="image/wctowxetibpkfk7xckro.jpg"  alt="" width="720" height="1280"></div>
+		<div class="foto"><img  src="image/um1bnbaw7qzb7bdaf5on.jpg"  alt="" width="720" height="1280"></div>
+		<div class="foto"><img  src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
+		<div class="foto"><img  src="image/um1bnbaw7qzb7bdaf5on.jpg" width="720" height="1280" alt=""></div>
+		<div class="foto"><img  src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
+		<div class="foto"><img  src="image/um1bnbaw7qzb7bdaf5on.jpg" width="720" height="1280" alt=""></div>
+		<div class="foto"><img src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
 	</section>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	
 
 	<script>
 	 $(document).ready(function(){
 	 	$("#slider").owlCarousel({
 	 		center: true,
-	 		items: 3,
+	 		nav:true,
+	 		navText:['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
+	 		items: 4.2,
 	 		loop: false,
-	 		margin: 60
+	 		animateIn:'fadeIn',
+	 		dots:true
+	 		
 
 	 	})
 	 })
 
 	</script>
+
 </body>
 </html>
