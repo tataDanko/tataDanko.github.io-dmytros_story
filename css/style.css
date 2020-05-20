@@ -62,7 +62,8 @@ body {
 	display: block;
 	margin: auto;
 	/*min-width: 120px;*/
-	max-width: calc(100vw - 46vh - 46px) ;
+	max-width: 320px ;
+	
 	max-height: calc(100vh - 185px);
 	object-fit: cover;
 }
@@ -83,10 +84,10 @@ body {
 }
 #slider .owl-dots .owl-dot span {
 	width: 	74px;
-	height: 4px;
+	height: 3px;
 	background: rgb(121,122,124);
 	border-radius: 0;
-	margin: 2.5px ;
+	margin: 2px ;
 }
 #slider .owl-dots .active span {
 	background: #ffffff;
@@ -141,14 +142,31 @@ body {
 #slider .owl-nav .owl-prev:hover {
 	left: 2em;
 	background: #ffffff;
-	transition: all .6s linear;
+	transition: all .6s ease;
 }
 #slider .owl-nav .owl-next:hover {
 	right: 2em;
 	background: #ffffff;
-	transition: all .6s linear;
+	transition: all .6s ease;
 }
 i {
 	
 	color: black;
+}
+.owl-prev.disabled {
+	display: none!important;
+}
+/*.owl-next.disabled:hover {
+	width: 70px!important;
+	height: 70px!important;
+	transition: all .6s ease;
+	background: #ffffff!important;
+}*/
+video {
+	display: block;
+	margin: auto;
+	
+	max-width: calc(100vw - 46vh - 46px) ;
+	max-height: calc(100vh - 185px);
+	object-fit: cover;
 }
