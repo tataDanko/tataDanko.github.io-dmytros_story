@@ -6,66 +6,49 @@
 	<title>story</title>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<section class="owl-carousel owl-theme" id="slider">
-		<div class="foto"><img  src="image/wctowxetibpkfk7xckro.jpg"  alt="" width="720" height="1280"></div>
+		<div class="foto">
+			<img  src="image/wctowxetibpkfk7xckro.jpg"  alt="" width="720" height="1280">
+		</div>
 		<div class="foto"><img  src="image/um1bnbaw7qzb7bdaf5on.jpg"  alt="" width="720" height="1280"></div>
 		<div>
-			<video id="one" autoplay muted loop controls src="video/e1ximky5tvm3xz7obj3w.mov"></video>
+			<video id="one"  muted loop >
+				<!-- MP4 Video -->
+				<source src="video/e1ximky5tvm3xz7obj3w.mov">
+			</video>
 		</div>
 		<div class="foto"><img  src="image/um1bnbaw7qzb7bdaf5on.jpg" width="720" height="1280" alt=""></div>
 		<div class="foto"><img  src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
 		<div>
-			<video id="one" autoplay muted loop controls src="video/e1ximky5tvm3xz7obj3w.mov"></video>
+			<video id="two"  muted loop >
+				<!-- MP4 Video -->
+				<source src="video/e1ximky5tvm3xz7obj3w.mov">
+			</video>
 		</div>
-		<div class="foto"><img src="image/wctowxetibpkfk7xckro.jpg" width="720" height="1280" alt=""></div>
+		<div class="foto"><img src="image/um1bnbaw7qzb7bdaf5on.jpg" width="720" height="1280" alt=""></div>
 	</section>
-
+	<div>
+		<div class="wrap-btn">
+		
+			<button id="unmute_button"></button>
+			<button id="pause_button"></button>
+			<button class="get_link" onclick="copyToClipboard()" ></button>
+						
+		</div>
+		
+			
+		
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	
+	<script src="js/main.js"></script>
 
-	<script>
-	 $(document).ready(function(){
-	 	$("#slider").owlCarousel({
-	 		center: true,
-	 		nav:true,
-	 		navText:['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
-	 		rewindNav:true,
-	 		items: 4.2,
-	 		loop: false,
-	 		animateIn:'fadeIn',
-	 		dots:true,
-	 		lazyLoad:false,
-	 		video:true,
-	 		afterAction: function(current) {
-	 			$(this).find('#one').get(0).play();
-	 		}
-	 		
-	 			
 
-	 	})
-	 });
 
-	 
-
-	</script>
-
-	<!-- <script>
-		 $("#slider").on('beforeChange',function(event, owlCarousel, currentSlide, nextSlide){
-	 	dotsHandler(nextSlide);
-	 });
-
-	 function dotsHandler(n) {
-	 	$('.owl-dot .active').removeClass('.owl-dot .active');
-	 	for(let i = 0; i < n; i++ ) {
-	 		$('.owl-dot span').eq(i).addClass('.owl-dot .active');
-	 	}
-	 }	
-	</script> -->
 
 </body>
 </html>
