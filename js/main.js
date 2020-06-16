@@ -2,7 +2,7 @@
      let container = $("#slider");
 
      container.on('initialized.owl.carousel', hideShowPrevButton);
-     // container.on('initialized.owl.carousel', hideShowNextButton);
+ 
 
      container.owlCarousel({
        center: true,
@@ -16,6 +16,7 @@
        lazyLoad:false,
       rewind: true,
        video:true,
+     
        
      });
 
@@ -95,6 +96,11 @@
      };
 
 
+     // container.on('translate.owl.carousel', function(e) {
+      
+     //  $('.owl-item').removeClass('.cta-link');
+     //  $('.owl-item.active.center').addClass('.cta-link');
+     // });
      
 
 
@@ -114,4 +120,5 @@
     alert('Link copied')
   };
   
+
 
